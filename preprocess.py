@@ -190,11 +190,11 @@ class PreProcessVideos:
                     print(f"Not matching #: {num_frames}, {channels.size(0)}")
                     continue
                 # Convert the PyTorch tensor to a NumPy array
-                numpy_array = channels.numpy()
+                # numpy_array = channels.numpy()
 
                 # Save the NumPy array as a .npy file
-                signal_path = signal_path.replace("channels.pt", "channels.npy")
-                np.save(signal_path, numpy_array)
+                # signal_path = signal_path.replace("channels.pt", "channels.npy")
+                # np.save(signal_path, numpy_array)
 
                 video_config = self.build_video_config(video_path, signal_path, num_frames)
 
